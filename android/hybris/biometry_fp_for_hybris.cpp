@@ -110,8 +110,6 @@ UHardwareBiometryFingerprintError VendorErrorFilter(int32_t error, int32_t* vend
             return ERROR_CANCELED;
         case FINGERPRINT_ERROR_UNABLE_TO_REMOVE:
             return ERROR_UNABLE_TO_REMOVE;
-        case FINGERPRINT_ERROR_LOCKOUT:
-            return ERROR_LOCKOUT;
         default:
             if (error >= FINGERPRINT_ERROR_VENDOR_BASE) {
                 // vendor specific code.
